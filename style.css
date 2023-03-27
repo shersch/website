@@ -1,0 +1,43 @@
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+body {
+  padding-top: 70px; /* adjust this value to match the height of your nav bar */
+}
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.active {
+    font-weight: bold;
+    color: white
+}
+.rainbow_text_animated {
+    background: linear-gradient(to right, #00ff00, #6666ff, #0099ff , #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out;
+    background-size: 400% 100%;
+}
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+.new-text {
+    opacity: 0;
+}
+
+.animate__zoomInDown.new-text {
+    opacity: 1;
+}
